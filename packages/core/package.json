@@ -1,0 +1,37 @@
+{
+  "name": "@safari-node/core",
+  "version": "0.1.0",
+  "author": "BenoitSafari",
+  "homepage": "https://github.com/safari-node/tree/master/packages/core#readme",
+  "description": "Safari-node core package",
+  "license": "MIT",
+  "readme": "README.md",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SafariLib/ape-spa.git"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest"
+  }
+}
