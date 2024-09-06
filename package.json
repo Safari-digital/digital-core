@@ -3,7 +3,10 @@
   "scripts": {
     "build:core": "pnpm --dir .\\packages\\core run build",
     "test:core": "pnpm --dir .\\packages\\core run test",
-    "deploy:core": "pnpm --dir .\\packages\\core run deploy"
+    "deploy:core": "pnpm --dir .\\packages\\core run deploy",
+    "build:use-hooks": "pnpm --dir .\\packages\\use-hooks run build",
+    "test:use-hooks": "pnpm --dir .\\packages\\use-hooks run test",
+    "deploy:use-hooks": "pnpm --dir .\\packages\\use-hooks run deploy"
   },
   "devDependencies": {
     "@types/node": "^20",

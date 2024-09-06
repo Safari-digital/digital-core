@@ -1,0 +1,53 @@
+{
+  "name": "@safari-node/use-hooks",
+  "version": "0.1.0",
+  "author": "BenoitSafari",
+  "homepage": "https://github.com/BenoitSafari/safari-node/tree/master/packages/use-hooks#readme",
+  "description": "Safari-node react hooks package",
+  "license": "MIT",
+  "readme": "README.md",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenoitSafari/safari-node.git"
+  },
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "deploy": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@safari-node/core": "^0.1.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "happy-dom": "^15.7.3",
+    "jsdom": "^25.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "@safari-node/core": "^0.1.0"
+  }
+}
