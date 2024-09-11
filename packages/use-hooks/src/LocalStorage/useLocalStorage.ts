@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
 import LocalStorage from './LocalStorage';
 
 export default function useLocalStorage<T>(key: string | null | undefined) {
-    const update = React.useCallback((value: T) => LocalStorage.set(key, value), [key]);
-    const remove = React.useCallback(() => LocalStorage.remove(key), [key]);
-    const value = React.useMemo(() => LocalStorage.get<T>(key), [key, update, remove]);
+    const update = (value: T) => LocalStorage.set(key, value);
+    const remove = () => LocalStorage.remove(key);
+    const value = LocalStorage.get<T>(key);
     return { value, update, remove };
 }
