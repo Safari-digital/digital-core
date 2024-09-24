@@ -1,1 +1,2 @@
-export * from './LocalStorage';
+export * from './localStorage';
+export * from './clipboard';

@@ -1,5 +1,3 @@
-'use client';
-
 import LocalStorage from './LocalStorage';
 
 export default function useLocalStorage<T>(key: string | null | undefined) {

@@ -12,13 +12,22 @@
 
 ---
 
-## Use-hooks Package
+## Extended Package
 
-A collection of hooks that are used with the React library.
+Extended package is a collection of low-level utilities and helpers that extends default JS functionalities.
 
 ### Installation
 
 ```bash
-npm install @safari-node/use-hooks
+npm install @safari-node/extended
 ```
+
+### Usage
+
+```typescript
+import '@safari-node/extended';
+
+JSON.safeParse('{"key": "value"}');
+```
+
 

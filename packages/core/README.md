@@ -12,8 +12,6 @@
 
 ---
 
-_/!\ This can be used for free, but it will not be maintained as it's for personal use /!\\_
-
 ## Core Package
 
 Core package is a collection of low-level utilities and helpers that are used across all other packages. It is a

@@ -1,9 +1,9 @@
 {
-  "name": "@safari-node/core",
+  "name": "@safari-node/extended",
   "version": "0.2.0",
   "author": "BenoitSafari",
-  "homepage": "https://github.com/BenoitSafari/safari-node/tree/master/packages/core#readme",
-  "description": "Safari-node core package",
+  "homepage": "https://github.com/BenoitSafari/safari-node/tree/master/packages/extended#readme",
+  "description": "Safari-node javascript extensions",
   "license": "MIT",
   "readme": "README.md",
   "type": "module",

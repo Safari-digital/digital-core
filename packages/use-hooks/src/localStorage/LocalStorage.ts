@@ -1,9 +1,9 @@
-import '@safari-node/core';
+import { safeParse } from '@safari-node/extended';
 
 export default class LocalStorage {
     public static get<T>(key: string | null | undefined): T | null {
         const value = localStorage.getItem(key ?? '');
-        return JSON.safeParse(value ?? '');
+        return safeParse(value ?? '');
     }
 
     public static set(key: string | null | undefined, value: any): void {

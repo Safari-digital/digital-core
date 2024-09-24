@@ -1,6 +1,6 @@
-import { trimSlashes } from './extensions';
+import { trimSlashes } from './String';
 
-export {};
+export { trimSlashes };
 
 Object.assign(String.prototype, {
     trimSlashes(this: string) {

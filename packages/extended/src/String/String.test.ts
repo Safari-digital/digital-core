@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { trimSlashes } from './extensions';
+import { trimSlashes } from './String';
 
 test('String: trimSlashes(), Should remove surrounding slashes', () => {
     [

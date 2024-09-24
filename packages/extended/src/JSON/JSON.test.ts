@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { safeParse } from './extensions';
+import { safeParse } from './JSON';
 
 test('JSON: safeParse(), Should parse JSON string', () => {
     const json = '{"name": "John"}';

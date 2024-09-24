@@ -48,11 +48,17 @@ importers:
   packages/core:
     publishDirectory: dist
 
+  packages/extended:
+    publishDirectory: dist
+
   packages/use-hooks:
     dependencies:
       '@safari-node/core':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: workspace:*
+        version: link:../core/dist
+      '@safari-node/extended':
+        specifier: workspace:*
+        version: link:../extended/dist
     devDependencies:
       '@testing-library/dom':
         specifier: ^10.4.0
@@ -441,10 +447,6 @@ packages:
 
   '@rushstack/ts-command-line@4.22.3':
     resolution: {integrity: sha512-edMpWB3QhFFZ4KtSzS8WNjBgR4PXPPOVrOHMbb7kNpmQ1UFS9HdVtjCXg1H5fG+xYAbeE+TMPcVPUyX2p84STA==}
-
-  '@safari-node/core@0.1.0':
-    resolution: {integrity: sha512-rFdvB/IuodKLgxsQ6vrfcjfAzROt+tqXmt5e5ZfbvGIqaZEQjh7XMWbHc+3j4Q+d2MCguw4cP6vJaktDhqW2nQ==}
-    engines: {node: '>=20.0.0'}
 
   '@testing-library/dom@10.4.0':
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
@@ -1967,8 +1969,6 @@ snapshots:
       string-argv: 0.3.2
     transitivePeerDependencies:
       - '@types/node'
-
-  '@safari-node/core@0.1.0': {}
 
   '@testing-library/dom@10.4.0':
     dependencies:

@@ -1,6 +1,6 @@
-import { safeParse } from './extensions';
+import { safeParse } from './JSON';
 
-export {};
+export { safeParse };
 
 Object.assign(JSON, {
     safeParse,
