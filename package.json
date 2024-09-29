@@ -1,28 +1,52 @@
 {
-  "author": "BenoitSafari",
-  "scripts": {
-    "build:core": "pnpm --dir .\\packages\\core run build",
-    "test:core": "pnpm --dir .\\packages\\core run test",
-    "deploy:core": "pnpm --dir .\\packages\\core run deploy",
-    "build:extended": "pnpm --dir .\\packages\\extended run build",
-    "test:extended": "pnpm --dir .\\packages\\extended run test",
-    "deploy:extended": "pnpm --dir .\\packages\\extended run deploy",
-    "build:use-hooks": "pnpm --dir .\\packages\\use-hooks run build",
-    "test:use-hooks": "pnpm --dir .\\packages\\use-hooks run test",
-    "deploy:use-hooks": "pnpm --dir .\\packages\\use-hooks run deploy"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "prettier": "^3.3.3",
-    "rollup-plugin-preserve-directives": "^0.4.0",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.1",
-    "vite-plugin-dts": "^4.0.3",
-    "vitest": "^2.0.5"
+    "name": "@safari-node/core",
+    "version": "0.4.0",
+    "author": "BenoitSafari",
+    "homepage": "https://github.com/BenoitSafari/safari-node/blob/master/README.md",
+    "description": "Collections of utility functions for JS/TS development.",
+    "license": "MIT",
+    "readme": "README.md",
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "vite build",
+      "test": "vitest",
+      "deploy": "npm publish --access public"
+    },
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    },
+    "files": [
+      "README.md",
+      "LICENSE",
+      "dist"
+    ],
+    "engines": {
+      "node": ">=20.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BenoitSafari/safari-node.git"
+    },
+    "publishConfig": {
+      "directory": "dist"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^7.18.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "prettier": "^3.3.3",
+        "rollup-plugin-preserve-directives": "^0.4.0",
+        "typescript": "^5.5.4",
+        "vite": "^5.4.1",
+        "vite-plugin-dts": "^4.0.3",
+        "vitest": "^2.0.5"
   }
 }

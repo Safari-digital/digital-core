@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { trimSlashes } from './String';
+import { isEmpty, trimSlashes } from './String';
 
 test('String: trimSlashes(), Should remove surrounding slashes', () => {
     [
@@ -8,4 +8,12 @@ test('String: trimSlashes(), Should remove surrounding slashes', () => {
         { test: '/auth/login/', result: 'auth/login' },
         { test: 'auth/login', result: 'auth/login' },
     ].forEach(({ test, result }) => expect(trimSlashes(test)).toBe(result));
+});
+
+test('String: isEmpty(), Should return true if string is empty', () => {
+    expect(isEmpty('')).toBe(true);
+    expect(isEmpty(' ')).toBe(false);
+    expect(isEmpty('test')).toBe(false);
+    // @ts-expect-error
+    expect(isEmpty(undefined)).toBe(true);
 });

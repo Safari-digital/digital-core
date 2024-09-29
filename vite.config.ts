@@ -1,6 +1,6 @@
+/// <reference types="vitest" />
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import preserveDirectives from 'rollup-plugin-preserve-directives';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
@@ -9,11 +9,9 @@ export default defineConfig({
             rollupTypes: true,
             insertTypesEntry: true,
         }),
-        preserveDirectives(),
     ],
     build: {
         rollupOptions: {
-            external: ['react', 'react-dom', '@safari-node/core'],
             output: {
                 preserveModules: true,
             },
