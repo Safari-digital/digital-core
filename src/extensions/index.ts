@@ -34,6 +34,9 @@ Object.assign(String.prototype, {
     trimSlashes(this: string) {
         return trimSlashes(this);
     },
+    isEmpty(this: string) {
+        return !this || this.length === 0;
+    },
 });
 
 declare global {

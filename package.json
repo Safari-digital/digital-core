@@ -1,6 +1,6 @@
 {
     "name": "@safari-node/core",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "author": "BenoitSafari",
     "homepage": "https://github.com/BenoitSafari/safari-node/blob/master/README.md",
     "description": "Collections of utility functions for JS/TS development.",
