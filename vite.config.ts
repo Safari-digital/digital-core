@@ -10,6 +10,10 @@ export default defineConfig({
             insertTypesEntry: true,
         }),
     ],
+    test: {
+        globals: true,
+        environment: 'jsdom',
+    },
     build: {
         rollupOptions: {
             output: {
