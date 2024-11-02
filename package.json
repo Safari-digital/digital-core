@@ -1,6 +1,6 @@
 {
     "name": "@safari-digital/core",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "author": "BenoitSafari",
     "homepage": "https://github.com/Safari-digital/digital-core/blob/master/README.md",
     "description": "Collections of utility functions for JS/TS development.",

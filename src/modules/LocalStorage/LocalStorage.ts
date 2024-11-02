@@ -1,4 +1,4 @@
-import { safeParse } from "../../extensions/JSON"
+import { safeParse } from "../JSON"
 
 export default class LocalStorage {
     public static get<T>(key: string): T | undefined {
